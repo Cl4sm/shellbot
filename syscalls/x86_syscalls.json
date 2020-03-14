@@ -1,0 +1,1751 @@
+[{
+    "eax": "0",
+    "name": "restart_syscall"
+}, {
+    "eax": "1",
+    "name": "exit",
+    "ebx": "int error_code"
+}, {
+    "eax": "2",
+    "name": "fork",
+    "ebx": "struct pt_regs *"
+}, {
+    "eax": "3",
+    "name": "read",
+    "ebx": "unsigned int fd",
+    "ecx": "char __user *buf",
+    "edx": "size_t count"
+}, {
+    "eax": "4",
+    "name": "write",
+    "ebx": "unsigned int fd",
+    "ecx": "const char __user *buf",
+    "edx": "size_t count"
+}, {
+    "eax": "5",
+    "name": "open",
+    "ebx": "const char __user *filename",
+    "ecx": "int flags",
+    "edx": "int mode"
+}, {
+    "eax": "6",
+    "name": "close",
+    "ebx": "unsigned int fd"
+}, {
+    "eax": "7",
+    "name": "waitpid",
+    "ebx": "pid_t pid",
+    "ecx": "int __user *stat_addr",
+    "edx": "int options"
+}, {
+    "eax": "8",
+    "name": "creat",
+    "ebx": "const char __user *pathname",
+    "ecx": "int mode"
+}, {
+    "eax": "9",
+    "name": "link",
+    "ebx": "const char __user *oldname",
+    "ecx": "const char __user *newname"
+}, {
+    "eax": "10",
+    "name": "unlink",
+    "ebx": "const char __user *pathname"
+}, {
+    "eax": "11",
+    "name": "execve",
+    "ebx": "char __user *",
+    "ecx": "char __user *__user *",
+    "edx": "char __user *__user *",
+    "esi": "struct pt_regs *"
+}, {
+    "eax": "12",
+    "name": "chdir",
+    "ebx": "const char __user *filename"
+}, {
+    "eax": "13",
+    "name": "time",
+    "ebx": "time_t __user *tloc"
+}, {
+    "eax": "14",
+    "name": "mknod",
+    "ebx": "const char __user *filename",
+    "ecx": "int mode",
+    "edx": "unsigned dev"
+}, {
+    "eax": "15",
+    "name": "chmod",
+    "ebx": "const char __user *filename",
+    "ecx": "mode_t mode"
+}, {
+    "eax": "16",
+    "name": "lchown16",
+    "ebx": "const char __user *filename",
+    "ecx": "old_uid_t user",
+    "edx": "old_gid_t group"
+}, {
+    "eax": "17",
+    "name": "not implemented"
+}, {
+    "eax": "18",
+    "name": "stat",
+    "ebx": "char __user *filename",
+    "ecx": "struct __old_kernel_stat __user *statbuf"
+}, {
+    "eax": "19",
+    "name": "lseek",
+    "ebx": "unsigned int fd",
+    "ecx": "off_t offset",
+    "edx": "unsigned int origin"
+}, {
+    "eax": "20",
+    "name": "getpid"
+}, {
+    "eax": "21",
+    "name": "mount",
+    "ebx": "char __user *dev_name",
+    "ecx": "char __user *dir_name",
+    "edx": "char __user *type",
+    "esi": "unsigned long flags",
+    "edi": "void __user *data"
+}, {
+    "eax": "22",
+    "name": "oldumount",
+    "ebx": "char __user *name"
+}, {
+    "eax": "23",
+    "name": "setuid16",
+    "ebx": "old_uid_t uid"
+}, {
+    "eax": "24",
+    "name": "getuid16"
+}, {
+    "eax": "25",
+    "name": "stime",
+    "ebx": "time_t __user *tptr"
+}, {
+    "eax": "26",
+    "name": "ptrace",
+    "ebx": "long request",
+    "ecx": "long pid",
+    "edx": "long addr",
+    "esi": "long data"
+}, {
+    "eax": "27",
+    "name": "alarm",
+    "ebx": "unsigned int seconds"
+}, {
+    "eax": "28",
+    "name": "fstat",
+    "ebx": "unsigned int fd",
+    "ecx": "struct __old_kernel_stat __user *statbuf"
+}, {
+    "eax": "29",
+    "name": "pause"
+}, {
+    "eax": "30",
+    "name": "utime",
+    "ebx": "char __user *filename",
+    "ecx": "struct utimbuf __user *times"
+}, {
+    "eax": "31",
+    "name": "not implemented"
+}, {
+    "eax": "32",
+    "name": "not implemented"
+}, {
+    "eax": "33",
+    "name": "access",
+    "ebx": "const char __user *filename",
+    "ecx": "int mode"
+}, {
+    "eax": "34",
+    "name": "nice",
+    "ebx": "int increment"
+}, {
+    "eax": "35",
+    "name": "not implemented"
+}, {
+    "eax": "36",
+    "name": "sync"
+}, {
+    "eax": "37",
+    "name": "kill",
+    "ebx": "int pid",
+    "ecx": "int sig"
+}, {
+    "eax": "38",
+    "name": "rename",
+    "ebx": "const char __user *oldname",
+    "ecx": "const char __user *newname"
+}, {
+    "eax": "39",
+    "name": "mkdir",
+    "ebx": "const char __user *pathname",
+    "ecx": "int mode"
+}, {
+    "eax": "40",
+    "name": "rmdir",
+    "ebx": "const char __user *pathname"
+}, {
+    "eax": "41",
+    "name": "dup",
+    "ebx": "unsigned int fildes"
+}, {
+    "eax": "42",
+    "name": "pipe",
+    "ebx": "int __user *fildes"
+}, {
+    "eax": "43",
+    "name": "times",
+    "ebx": "struct tms __user *tbuf"
+}, {
+    "eax": "44",
+    "name": "not implemented"
+}, {
+    "eax": "45",
+    "name": "brk",
+    "ebx": "unsigned long brk"
+}, {
+    "eax": "46",
+    "name": "setgid16",
+    "ebx": "old_gid_t gid"
+}, {
+    "eax": "47",
+    "name": "getgid16"
+}, {
+    "eax": "48",
+    "name": "signal",
+    "ebx": "int sig",
+    "ecx": "__sighandler_t handler"
+}, {
+    "eax": "49",
+    "name": "geteuid16"
+}, {
+    "eax": "50",
+    "name": "getegid16"
+}, {
+    "eax": "51",
+    "name": "acct",
+    "ebx": "const char __user *name"
+}, {
+    "eax": "52",
+    "name": "umount",
+    "ebx": "char __user *name",
+    "ecx": "int flags"
+}, {
+    "eax": "53",
+    "name": "not implemented"
+}, {
+    "eax": "54",
+    "name": "ioctl",
+    "ebx": "unsigned int fd",
+    "ecx": "unsigned int cmd",
+    "edx": "unsigned long arg"
+}, {
+    "eax": "55",
+    "name": "fcntl",
+    "ebx": "unsigned int fd",
+    "ecx": "unsigned int cmd",
+    "edx": "unsigned long arg"
+}, {
+    "eax": "56",
+    "name": "not implemented"
+}, {
+    "eax": "57",
+    "name": "setpgid",
+    "ebx": "pid_t pid",
+    "ecx": "pid_t pgid"
+}, {
+    "eax": "58",
+    "name": "not implemented"
+}, {
+    "eax": "59",
+    "name": "olduname",
+    "ebx": "struct oldold_utsname __user *"
+}, {
+    "eax": "60",
+    "name": "umask",
+    "ebx": "int mask"
+}, {
+    "eax": "61",
+    "name": "chroot",
+    "ebx": "const char __user *filename"
+}, {
+    "eax": "62",
+    "name": "ustat",
+    "ebx": "unsigned dev",
+    "ecx": "struct ustat __user *ubuf"
+}, {
+    "eax": "63",
+    "name": "dup2",
+    "ebx": "unsigned int oldfd",
+    "ecx": "unsigned int newfd"
+}, {
+    "eax": "64",
+    "name": "getppid"
+}, {
+    "eax": "65",
+    "name": "getpgrp"
+}, {
+    "eax": "66",
+    "name": "setsid"
+}, {
+    "eax": "67",
+    "name": "sigaction",
+    "ebx": "int sig",
+    "ecx": "const struct old_sigaction __user *act",
+    "edx": "struct old_sigaction __user *oact"
+}, {
+    "eax": "68",
+    "name": "sgetmask"
+}, {
+    "eax": "69",
+    "name": "ssetmask",
+    "ebx": "int newmask"
+}, {
+    "eax": "70",
+    "name": "setreuid16",
+    "ebx": "old_uid_t ruid",
+    "ecx": "old_uid_t euid"
+}, {
+    "eax": "71",
+    "name": "setregid16",
+    "ebx": "old_gid_t rgid",
+    "ecx": "old_gid_t egid"
+}, {
+    "eax": "72",
+    "name": "sigsuspend",
+    "ebx": "int history0",
+    "ecx": "int history1",
+    "edx": "old_sigset_t mask"
+}, {
+    "eax": "73",
+    "name": "sigpending",
+    "ebx": "old_sigset_t __user *set"
+}, {
+    "eax": "74",
+    "name": "sethostname",
+    "ebx": "char __user *name",
+    "ecx": "int len"
+}, {
+    "eax": "75",
+    "name": "setrlimit",
+    "ebx": "unsigned int resource",
+    "ecx": "struct rlimit __user *rlim"
+}, {
+    "eax": "76",
+    "name": "old_getrlimit",
+    "ebx": "unsigned int resource",
+    "ecx": "struct rlimit __user *rlim"
+}, {
+    "eax": "77",
+    "name": "getrusage",
+    "ebx": "int who",
+    "ecx": "struct rusage __user *ru"
+}, {
+    "eax": "78",
+    "name": "gettimeofday",
+    "ebx": "struct timeval __user *tv",
+    "ecx": "struct timezone __user *tz"
+}, {
+    "eax": "79",
+    "name": "settimeofday",
+    "ebx": "struct timeval __user *tv",
+    "ecx": "struct timezone __user *tz"
+}, {
+    "eax": "80",
+    "name": "getgroups16",
+    "ebx": "int gidsetsize",
+    "ecx": "old_gid_t __user *grouplist"
+}, {
+    "eax": "81",
+    "name": "setgroups16",
+    "ebx": "int gidsetsize",
+    "ecx": "old_gid_t __user *grouplist"
+}, {
+    "eax": "82",
+    "name": "old_select",
+    "ebx": "struct sel_arg_struct __user *arg"
+}, {
+    "eax": "83",
+    "name": "symlink",
+    "ebx": "const char __user *old",
+    "ecx": "const char __user *new"
+}, {
+    "eax": "84",
+    "name": "lstat",
+    "ebx": "char __user *filename",
+    "ecx": "struct __old_kernel_stat __user *statbuf"
+}, {
+    "eax": "85",
+    "name": "readlink",
+    "ebx": "const char __user *path",
+    "ecx": "char __user *buf",
+    "edx": "int bufsiz"
+}, {
+    "eax": "86",
+    "name": "uselib",
+    "ebx": "const char __user *library"
+}, {
+    "eax": "87",
+    "name": "swapon",
+    "ebx": "const char __user *specialfile",
+    "ecx": "int swap_flags"
+}, {
+    "eax": "88",
+    "name": "reboot",
+    "ebx": "int magic1",
+    "ecx": "int magic2",
+    "edx": "unsigned int cmd",
+    "esi": "void __user *arg"
+}, {
+    "eax": "89",
+    "name": "old_readdir",
+    "ebx": "unsigned int",
+    "ecx": "struct old_linux_dirent __user *",
+    "edx": "unsigned int"
+}, {
+    "eax": "90",
+    "name": "old_mmap",
+    "ebx": "struct mmap_arg_struct __user *arg"
+}, {
+    "eax": "91",
+    "name": "munmap",
+    "ebx": "unsigned long addr",
+    "ecx": "size_t len"
+}, {
+    "eax": "92",
+    "name": "truncate",
+    "ebx": "const char __user *path",
+    "ecx": "long length"
+}, {
+    "eax": "93",
+    "name": "ftruncate",
+    "ebx": "unsigned int fd",
+    "ecx": "unsigned long length"
+}, {
+    "eax": "94",
+    "name": "fchmod",
+    "ebx": "unsigned int fd",
+    "ecx": "mode_t mode"
+}, {
+    "eax": "95",
+    "name": "fchown16",
+    "ebx": "unsigned int fd",
+    "ecx": "old_uid_t user",
+    "edx": "old_gid_t group"
+}, {
+    "eax": "96",
+    "name": "getpriority",
+    "ebx": "int which",
+    "ecx": "int who"
+}, {
+    "eax": "97",
+    "name": "setpriority",
+    "ebx": "int which",
+    "ecx": "int who",
+    "edx": "int niceval"
+}, {
+    "eax": "98",
+    "name": "not implemented"
+}, {
+    "eax": "99",
+    "name": "statfs",
+    "ebx": "const char __user * path",
+    "ecx": "struct statfs __user *buf"
+}, {
+    "eax": "100",
+    "name": "fstatfs",
+    "ebx": "unsigned int fd",
+    "ecx": "struct statfs __user *buf"
+}, {
+    "eax": "101",
+    "name": "ioperm",
+    "ebx": "unsigned long",
+    "ecx": "unsigned long",
+    "edx": "int"
+}, {
+    "eax": "102",
+    "name": "socketcall",
+    "ebx": "int call",
+    "ecx": "unsigned long __user *args"
+}, {
+    "eax": "103",
+    "name": "syslog",
+    "ebx": "int type",
+    "ecx": "char __user *buf",
+    "edx": "int len"
+}, {
+    "eax": "104",
+    "name": "setitimer",
+    "ebx": "int which",
+    "ecx": "struct itimerval __user *value",
+    "edx": "struct itimerval __user *ovalue"
+}, {
+    "eax": "105",
+    "name": "getitimer",
+    "ebx": "int which",
+    "ecx": "struct itimerval __user *value"
+}, {
+    "eax": "106",
+    "name": "newstat",
+    "ebx": "char __user *filename",
+    "ecx": "struct stat __user *statbuf"
+}, {
+    "eax": "107",
+    "name": "newlstat",
+    "ebx": "char __user *filename",
+    "ecx": "struct stat __user *statbuf"
+}, {
+    "eax": "108",
+    "name": "newfstat",
+    "ebx": "unsigned int fd",
+    "ecx": "struct stat __user *statbuf"
+}, {
+    "eax": "109",
+    "name": "uname",
+    "ebx": "struct old_utsname __user *"
+}, {
+    "eax": "110",
+    "name": "iopl",
+    "ebx": "unsigned int",
+    "ecx": "struct pt_regs *"
+}, {
+    "eax": "111",
+    "name": "vhangup"
+}, {
+    "eax": "112",
+    "name": "not implemented"
+}, {
+    "eax": "113",
+    "name": "vm86old",
+    "ebx": "struct vm86_struct __user *",
+    "ecx": "struct pt_regs *"
+}, {
+    "eax": "114",
+    "name": "wait4",
+    "ebx": "pid_t pid",
+    "ecx": "int __user *stat_addr",
+    "edx": "int options",
+    "esi": "struct rusage __user *ru"
+}, {
+    "eax": "115",
+    "name": "swapoff",
+    "ebx": "const char __user *specialfile"
+}, {
+    "eax": "116",
+    "name": "sysinfo",
+    "ebx": "struct sysinfo __user *info"
+}, {
+    "eax": "117",
+    "name": "ipc"
+}, {
+    "eax": "118",
+    "name": "fsync",
+    "ebx": "unsigned int fd"
+}, {
+    "eax": "119",
+    "name": "sigreturn",
+    "ebx": "struct pt_regs *regs"
+}, {
+    "eax": "120",
+    "name": "clone",
+    "ebx": "unsigned long",
+    "ecx": "unsigned long",
+    "edx": "unsigned long",
+    "esi": "unsigned long",
+    "edi": "struct pt_regs *"
+}, {
+    "eax": "121",
+    "name": "setdomainname",
+    "ebx": "char __user *name",
+    "ecx": "int len"
+}, {
+    "eax": "122",
+    "name": "newuname",
+    "ebx": "struct new_utsname __user *name"
+}, {
+    "eax": "123",
+    "name": "modify_ldt",
+    "ebx": "int",
+    "ecx": "void __user *",
+    "edx": "unsigned long"
+}, {
+    "eax": "124",
+    "name": "adjtimex",
+    "ebx": "struct timex __user *txc_p"
+}, {
+    "eax": "125",
+    "name": "mprotect",
+    "ebx": "unsigned long start",
+    "ecx": "size_t len",
+    "edx": "unsigned long prot"
+}, {
+    "eax": "126",
+    "name": "sigprocmask",
+    "ebx": "int how",
+    "ecx": "old_sigset_t __user *set",
+    "edx": "old_sigset_t __user *oset"
+}, {
+    "eax": "127",
+    "name": "not implemented"
+}, {
+    "eax": "128",
+    "name": "init_module",
+    "ebx": "void __user *umod",
+    "ecx": "unsigned long len",
+    "edx": "const char __user *uargs"
+}, {
+    "eax": "129",
+    "name": "delete_module",
+    "ebx": "const char __user *name_user",
+    "ecx": "unsigned int flags"
+}, {
+    "eax": "130",
+    "name": "not implemented"
+}, {
+    "eax": "131",
+    "name": "quotactl",
+    "ebx": "unsigned int cmd",
+    "ecx": "const char __user *special",
+    "edx": "qid_t id",
+    "esi": "void __user *addr"
+}, {
+    "eax": "132",
+    "name": "getpgid",
+    "ebx": "pid_t pid"
+}, {
+    "eax": "133",
+    "name": "fchdir",
+    "ebx": "unsigned int fd"
+}, {
+    "eax": "134",
+    "name": "bdflush",
+    "ebx": "int func",
+    "ecx": "long data"
+}, {
+    "eax": "135",
+    "name": "sysfs",
+    "ebx": "int option",
+    "ecx": "unsigned long arg1",
+    "edx": "unsigned long arg2"
+}, {
+    "eax": "136",
+    "name": "personality",
+    "ebx": "unsigned int personality"
+}, {
+    "eax": "137",
+    "name": "not implemented"
+}, {
+    "eax": "138",
+    "name": "setfsuid16",
+    "ebx": "old_uid_t uid"
+}, {
+    "eax": "139",
+    "name": "setfsgid16",
+    "ebx": "old_gid_t gid"
+}, {
+    "eax": "140",
+    "name": "llseek",
+    "ebx": "unsigned int fd",
+    "ecx": "unsigned long offset_high",
+    "edx": "unsigned long offset_low",
+    "esi": "loff_t __user *result",
+    "edi": "unsigned int origin"
+}, {
+    "eax": "141",
+    "name": "getdents",
+    "ebx": "unsigned int fd",
+    "ecx": "struct linux_dirent __user *dirent",
+    "edx": "unsigned int count"
+}, {
+    "eax": "142",
+    "name": "select",
+    "ebx": "int n",
+    "ecx": "fd_set __user *inp",
+    "edx": "fd_set __user *outp",
+    "esi": "fd_set __user *exp",
+    "edi": "struct timeval __user *tvp"
+}, {
+    "eax": "143",
+    "name": "flock",
+    "ebx": "unsigned int fd",
+    "ecx": "unsigned int cmd"
+}, {
+    "eax": "144",
+    "name": "msync",
+    "ebx": "unsigned long start",
+    "ecx": "size_t len",
+    "edx": "int flags"
+}, {
+    "eax": "145",
+    "name": "readv",
+    "ebx": "unsigned long fd",
+    "ecx": "const struct iovec __user *vec",
+    "edx": "unsigned long vlen"
+}, {
+    "eax": "146",
+    "name": "writev",
+    "ebx": "unsigned long fd",
+    "ecx": "const struct iovec __user *vec",
+    "edx": "unsigned long vlen"
+}, {
+    "eax": "147",
+    "name": "getsid",
+    "ebx": "pid_t pid"
+}, {
+    "eax": "148",
+    "name": "fdatasync",
+    "ebx": "unsigned int fd"
+}, {
+    "eax": "149",
+    "name": "sysctl",
+    "ebx": "struct __sysctl_args __user *args"
+}, {
+    "eax": "150",
+    "name": "mlock",
+    "ebx": "unsigned long start",
+    "ecx": "size_t len"
+}, {
+    "eax": "151",
+    "name": "munlock",
+    "ebx": "unsigned long start",
+    "ecx": "size_t len"
+}, {
+    "eax": "152",
+    "name": "mlockall",
+    "ebx": "int flags"
+}, {
+    "eax": "153",
+    "name": "munlockall"
+}, {
+    "eax": "154",
+    "name": "sched_setparam",
+    "ebx": "pid_t pid",
+    "ecx": "struct sched_param __user *param"
+}, {
+    "eax": "155",
+    "name": "sched_getparam",
+    "ebx": "pid_t pid",
+    "ecx": "struct sched_param __user *param"
+}, {
+    "eax": "156",
+    "name": "sched_setscheduler",
+    "ebx": "pid_t pid",
+    "ecx": "int policy",
+    "edx": "struct sched_param __user *param"
+}, {
+    "eax": "157",
+    "name": "sched_getscheduler",
+    "ebx": "pid_t pid"
+}, {
+    "eax": "158",
+    "name": "sched_yield"
+}, {
+    "eax": "159",
+    "name": "sched_get_priority_max",
+    "ebx": "int policy"
+}, {
+    "eax": "160",
+    "name": "sched_get_priority_min",
+    "ebx": "int policy"
+}, {
+    "eax": "161",
+    "name": "sched_rr_get_interval",
+    "ebx": "pid_t pid",
+    "ecx": "struct timespec __user *interval"
+}, {
+    "eax": "162",
+    "name": "nanosleep",
+    "ebx": "struct timespec __user *rqtp",
+    "ecx": "struct timespec __user *rmtp"
+}, {
+    "eax": "163",
+    "name": "mremap",
+    "ebx": "unsigned long addr",
+    "ecx": "unsigned long old_len",
+    "edx": "unsigned long new_len",
+    "esi": "unsigned long flags",
+    "edi": "unsigned long new_addr"
+}, {
+    "eax": "164",
+    "name": "setresuid16",
+    "ebx": "old_uid_t ruid",
+    "ecx": "old_uid_t euid",
+    "edx": "old_uid_t suid"
+}, {
+    "eax": "165",
+    "name": "getresuid16",
+    "ebx": "old_uid_t __user *ruid",
+    "ecx": "old_uid_t __user *euid",
+    "edx": "old_uid_t __user *suid"
+}, {
+    "eax": "166",
+    "name": "vm86",
+    "ebx": "unsigned long",
+    "ecx": "unsigned long",
+    "edx": "struct pt_regs *"
+}, {
+    "eax": "167",
+    "name": "not implemented"
+}, {
+    "eax": "168",
+    "name": "poll",
+    "ebx": "struct pollfd __user *ufds",
+    "ecx": "unsigned int nfds",
+    "edx": "long timeout"
+}, {
+    "eax": "169",
+    "name": "nfsservctl",
+    "ebx": "int cmd",
+    "ecx": "struct nfsctl_arg __user *arg",
+    "edx": "void __user *res"
+}, {
+    "eax": "170",
+    "name": "setresgid16",
+    "ebx": "old_gid_t rgid",
+    "ecx": "old_gid_t egid",
+    "edx": "old_gid_t sgid"
+}, {
+    "eax": "171",
+    "name": "getresgid16",
+    "ebx": "old_gid_t __user *rgid",
+    "ecx": "old_gid_t __user *egid",
+    "edx": "old_gid_t __user *sgid"
+}, {
+    "eax": "172",
+    "name": "prctl",
+    "ebx": "int option",
+    "ecx": "unsigned long arg2",
+    "edx": "unsigned long arg3",
+    "esi": "unsigned long arg4",
+    "edi": "unsigned long arg5"
+}, {
+    "eax": "173",
+    "name": "rt_sigreturn",
+    "ebx": "struct pt_regs *"
+}, {
+    "eax": "174",
+    "name": "rt_sigaction",
+    "ebx": "int sig",
+    "ecx": "const struct sigaction __user *act",
+    "edx": "struct sigaction __user *oact",
+    "esi": "size_t sigsetsize"
+}, {
+    "eax": "175",
+    "name": "rt_sigprocmask",
+    "ebx": "int how",
+    "ecx": "sigset_t __user *set",
+    "edx": "sigset_t __user *oset",
+    "esi": "size_t sigsetsize"
+}, {
+    "eax": "176",
+    "name": "rt_sigpending",
+    "ebx": "sigset_t __user *set",
+    "ecx": "size_t sigsetsize"
+}, {
+    "eax": "177",
+    "name": "rt_sigtimedwait",
+    "ebx": "const sigset_t __user *uthese",
+    "ecx": "siginfo_t __user *uinfo",
+    "edx": "const struct timespec __user *uts",
+    "esi": "size_t sigsetsize"
+}, {
+    "eax": "178",
+    "name": "rt_sigqueueinfo",
+    "ebx": "int pid",
+    "ecx": "int sig",
+    "edx": "siginfo_t __user *uinfo"
+}, {
+    "eax": "179",
+    "name": "rt_sigsuspend",
+    "ebx": "sigset_t __user *unewset",
+    "ecx": "size_t sigsetsize"
+}, {
+    "eax": "180",
+    "name": "pread64",
+    "ebx": "unsigned int fd",
+    "ecx": "char __user *buf",
+    "edx": "size_t count",
+    "esi": "loff_t pos"
+}, {
+    "eax": "181",
+    "name": "pwrite64",
+    "ebx": "unsigned int fd",
+    "ecx": "const char __user *buf",
+    "edx": "size_t count",
+    "esi": "loff_t pos"
+}, {
+    "eax": "182",
+    "name": "chown16",
+    "ebx": "const char __user *filename",
+    "ecx": "old_uid_t user",
+    "edx": "old_gid_t group"
+}, {
+    "eax": "183",
+    "name": "getcwd",
+    "ebx": "char __user *buf",
+    "ecx": "unsigned long size"
+}, {
+    "eax": "184",
+    "name": "capget",
+    "ebx": "cap_user_header_t header",
+    "ecx": "cap_user_data_t dataptr"
+}, {
+    "eax": "185",
+    "name": "capset",
+    "ebx": "cap_user_header_t header",
+    "ecx": "const cap_user_data_t data"
+}, {
+    "eax": "186",
+    "name": "sigaltstack",
+    "ebx": "const stack_t __user *",
+    "ecx": "stack_t __user *",
+    "edx": "struct pt_regs *"
+}, {
+    "eax": "187",
+    "name": "sendfile",
+    "ebx": "int out_fd",
+    "ecx": "int in_fd",
+    "edx": "off_t __user *offset",
+    "esi": "size_t count"
+}, {
+    "eax": "188",
+    "name": "not implemented"
+}, {
+    "eax": "189",
+    "name": "not implemented"
+}, {
+    "eax": "190",
+    "name": "vfork",
+    "ebx": "struct pt_regs *"
+}, {
+    "eax": "191",
+    "name": "getrlimit",
+    "ebx": "unsigned int resource",
+    "ecx": "struct rlimit __user *rlim"
+}, {
+    "eax": "192",
+    "name": "mmap_pgoff"
+}, {
+    "eax": "193",
+    "name": "truncate64",
+    "ebx": "const char __user *path",
+    "ecx": "loff_t length"
+}, {
+    "eax": "194",
+    "name": "ftruncate64",
+    "ebx": "unsigned int fd",
+    "ecx": "loff_t length"
+}, {
+    "eax": "195",
+    "name": "stat64",
+    "ebx": "char __user *filename",
+    "ecx": "struct stat64 __user *statbuf"
+}, {
+    "eax": "196",
+    "name": "lstat64",
+    "ebx": "char __user *filename",
+    "ecx": "struct stat64 __user *statbuf"
+}, {
+    "eax": "197",
+    "name": "fstat64",
+    "ebx": "unsigned long fd",
+    "ecx": "struct stat64 __user *statbuf"
+}, {
+    "eax": "198",
+    "name": "lchown",
+    "ebx": "const char __user *filename",
+    "ecx": "uid_t user",
+    "edx": "gid_t group"
+}, {
+    "eax": "199",
+    "name": "getuid"
+}, {
+    "eax": "200",
+    "name": "getgid"
+}, {
+    "eax": "201",
+    "name": "geteuid"
+}, {
+    "eax": "202",
+    "name": "getegid"
+}, {
+    "eax": "203",
+    "name": "setreuid",
+    "ebx": "uid_t ruid",
+    "ecx": "uid_t euid"
+}, {
+    "eax": "204",
+    "name": "setregid",
+    "ebx": "gid_t rgid",
+    "ecx": "gid_t egid"
+}, {
+    "eax": "205",
+    "name": "getgroups",
+    "ebx": "int gidsetsize",
+    "ecx": "gid_t __user *grouplist"
+}, {
+    "eax": "206",
+    "name": "setgroups",
+    "ebx": "int gidsetsize",
+    "ecx": "gid_t __user *grouplist"
+}, {
+    "eax": "207",
+    "name": "fchown",
+    "ebx": "unsigned int fd",
+    "ecx": "uid_t user",
+    "edx": "gid_t group"
+}, {
+    "eax": "208",
+    "name": "setresuid",
+    "ebx": "uid_t ruid",
+    "ecx": "uid_t euid",
+    "edx": "uid_t suid"
+}, {
+    "eax": "209",
+    "name": "getresuid",
+    "ebx": "uid_t __user *ruid",
+    "ecx": "uid_t __user *euid",
+    "edx": "uid_t __user *suid"
+}, {
+    "eax": "210",
+    "name": "setresgid",
+    "ebx": "gid_t rgid",
+    "ecx": "gid_t egid",
+    "edx": "gid_t sgid"
+}, {
+    "eax": "211",
+    "name": "getresgid",
+    "ebx": "gid_t __user *rgid",
+    "ecx": "gid_t __user *egid",
+    "edx": "gid_t __user *sgid"
+}, {
+    "eax": "212",
+    "name": "chown",
+    "ebx": "const char __user *filename",
+    "ecx": "uid_t user",
+    "edx": "gid_t group"
+}, {
+    "eax": "213",
+    "name": "setuid",
+    "ebx": "uid_t uid"
+}, {
+    "eax": "214",
+    "name": "setgid",
+    "ebx": "gid_t gid"
+}, {
+    "eax": "215",
+    "name": "setfsuid",
+    "ebx": "uid_t uid"
+}, {
+    "eax": "216",
+    "name": "setfsgid",
+    "ebx": "gid_t gid"
+}, {
+    "eax": "217",
+    "name": "pivot_root",
+    "ebx": "const char __user *new_root",
+    "ecx": "const char __user *put_old"
+}, {
+    "eax": "218",
+    "name": "mincore",
+    "ebx": "unsigned long start",
+    "ecx": "size_t len",
+    "edx": "unsigned char __user * vec"
+}, {
+    "eax": "219",
+    "name": "madvise",
+    "ebx": "unsigned long start",
+    "ecx": "size_t len",
+    "edx": "int behavior"
+}, {
+    "eax": "220",
+    "name": "getdents64",
+    "ebx": "unsigned int fd",
+    "ecx": "struct linux_dirent64 __user *dirent",
+    "edx": "unsigned int count"
+}, {
+    "eax": "221",
+    "name": "fcntl64",
+    "ebx": "unsigned int fd",
+    "ecx": "unsigned int cmd",
+    "edx": "unsigned long arg"
+}, {
+    "eax": "222",
+    "name": "not implemented"
+}, {
+    "eax": "223",
+    "name": "not implemented"
+}, {
+    "eax": "224",
+    "name": "gettid"
+}, {
+    "eax": "225",
+    "name": "readahead",
+    "ebx": "int fd",
+    "ecx": "loff_t offset",
+    "edx": "size_t count"
+}, {
+    "eax": "226",
+    "name": "setxattr",
+    "ebx": "const char __user *path",
+    "ecx": "const char __user *name",
+    "edx": "const void __user *value",
+    "esi": "size_t size",
+    "edi": "int flags"
+}, {
+    "eax": "227",
+    "name": "lsetxattr",
+    "ebx": "const char __user *path",
+    "ecx": "const char __user *name",
+    "edx": "const void __user *value",
+    "esi": "size_t size",
+    "edi": "int flags"
+}, {
+    "eax": "228",
+    "name": "fsetxattr",
+    "ebx": "int fd",
+    "ecx": "const char __user *name",
+    "edx": "const void __user *value",
+    "esi": "size_t size",
+    "edi": "int flags"
+}, {
+    "eax": "229",
+    "name": "getxattr",
+    "ebx": "const char __user *path",
+    "ecx": "const char __user *name",
+    "edx": "void __user *value",
+    "esi": "size_t size"
+}, {
+    "eax": "230",
+    "name": "lgetxattr",
+    "ebx": "const char __user *path",
+    "ecx": "const char __user *name",
+    "edx": "void __user *value",
+    "esi": "size_t size"
+}, {
+    "eax": "231",
+    "name": "fgetxattr",
+    "ebx": "int fd",
+    "ecx": "const char __user *name",
+    "edx": "void __user *value",
+    "esi": "size_t size"
+}, {
+    "eax": "232",
+    "name": "listxattr",
+    "ebx": "const char __user *path",
+    "ecx": "char __user *list",
+    "edx": "size_t size"
+}, {
+    "eax": "233",
+    "name": "llistxattr",
+    "ebx": "const char __user *path",
+    "ecx": "char __user *list",
+    "edx": "size_t size"
+}, {
+    "eax": "234",
+    "name": "flistxattr",
+    "ebx": "int fd",
+    "ecx": "char __user *list",
+    "edx": "size_t size"
+}, {
+    "eax": "235",
+    "name": "removexattr",
+    "ebx": "const char __user *path",
+    "ecx": "const char __user *name"
+}, {
+    "eax": "236",
+    "name": "lremovexattr",
+    "ebx": "const char __user *path",
+    "ecx": "const char __user *name"
+}, {
+    "eax": "237",
+    "name": "fremovexattr",
+    "ebx": "int fd",
+    "ecx": "const char __user *name"
+}, {
+    "eax": "238",
+    "name": "tkill",
+    "ebx": "int pid",
+    "ecx": "int sig"
+}, {
+    "eax": "239",
+    "name": "sendfile64",
+    "ebx": "int out_fd",
+    "ecx": "int in_fd",
+    "edx": "loff_t __user *offset",
+    "esi": "size_t count"
+}, {
+    "eax": "240",
+    "name": "futex"
+}, {
+    "eax": "241",
+    "name": "sched_setaffinity",
+    "ebx": "pid_t pid",
+    "ecx": "unsigned int len",
+    "edx": "unsigned long __user *user_mask_ptr"
+}, {
+    "eax": "242",
+    "name": "sched_getaffinity",
+    "ebx": "pid_t pid",
+    "ecx": "unsigned int len",
+    "edx": "unsigned long __user *user_mask_ptr"
+}, {
+    "eax": "243",
+    "name": "set_thread_area",
+    "ebx": "struct user_desc __user *"
+}, {
+    "eax": "244",
+    "name": "get_thread_area",
+    "ebx": "struct user_desc __user *"
+}, {
+    "eax": "245",
+    "name": "io_setup",
+    "ebx": "unsigned nr_reqs",
+    "ecx": "aio_context_t __user *ctx"
+}, {
+    "eax": "246",
+    "name": "io_destroy",
+    "ebx": "aio_context_t ctx"
+}, {
+    "eax": "247",
+    "name": "io_getevents",
+    "ebx": "aio_context_t ctx_id",
+    "ecx": "long min_nr",
+    "edx": "long nr",
+    "esi": "struct io_event __user *events",
+    "edi": "struct timespec __user *timeout"
+}, {
+    "eax": "248",
+    "name": "io_submit",
+    "ebx": "aio_context_t",
+    "ecx": "long",
+    "edx": "struct iocb __user * __user *"
+}, {
+    "eax": "249",
+    "name": "io_cancel",
+    "ebx": "aio_context_t ctx_id",
+    "ecx": "struct iocb __user *iocb",
+    "edx": "struct io_event __user *result"
+}, {
+    "eax": "250",
+    "name": "fadvise64",
+    "ebx": "int fd",
+    "ecx": "loff_t offset",
+    "edx": "size_t len",
+    "esi": "int advice"
+}, {
+    "eax": "251",
+    "name": "not implemented"
+}, {
+    "eax": "252",
+    "name": "exit_group",
+    "ebx": "int error_code"
+}, {
+    "eax": "253",
+    "name": "lookup_dcookie",
+    "ebx": "u64 cookie64",
+    "ecx": "char __user *buf",
+    "edx": "size_t len"
+}, {
+    "eax": "254",
+    "name": "epoll_create",
+    "ebx": "int size"
+}, {
+    "eax": "255",
+    "name": "epoll_ctl",
+    "ebx": "int epfd",
+    "ecx": "int op",
+    "edx": "int fd",
+    "esi": "struct epoll_event __user *event"
+}, {
+    "eax": "256",
+    "name": "epoll_wait",
+    "ebx": "int epfd",
+    "ecx": "struct epoll_event __user *events",
+    "edx": "int maxevents",
+    "esi": "int timeout"
+}, {
+    "eax": "257",
+    "name": "remap_file_pages",
+    "ebx": "unsigned long start",
+    "ecx": "unsigned long size",
+    "edx": "unsigned long prot",
+    "esi": "unsigned long pgoff",
+    "edi": "unsigned long flags"
+}, {
+    "eax": "258",
+    "name": "set_tid_address",
+    "ebx": "int __user *tidptr"
+}, {
+    "eax": "259",
+    "name": "timer_create",
+    "ebx": "clockid_t which_clock",
+    "ecx": "struct sigevent __user *timer_event_spec",
+    "edx": "timer_t __user * created_timer_id"
+}, {
+    "eax": "260",
+    "name": "timer_settime",
+    "ebx": "timer_t timer_id",
+    "ecx": "int flags",
+    "edx": "const struct itimerspec __user *new_setting",
+    "esi": "struct itimerspec __user *old_setting"
+}, {
+    "eax": "261",
+    "name": "timer_gettime",
+    "ebx": "timer_t timer_id",
+    "ecx": "struct itimerspec __user *setting"
+}, {
+    "eax": "262",
+    "name": "timer_getoverrun",
+    "ebx": "timer_t timer_id"
+}, {
+    "eax": "263",
+    "name": "timer_delete",
+    "ebx": "timer_t timer_id"
+}, {
+    "eax": "264",
+    "name": "clock_settime",
+    "ebx": "clockid_t which_clock",
+    "ecx": "const struct timespec __user *tp"
+}, {
+    "eax": "265",
+    "name": "clock_gettime",
+    "ebx": "clockid_t which_clock",
+    "ecx": "struct timespec __user *tp"
+}, {
+    "eax": "266",
+    "name": "clock_getres",
+    "ebx": "clockid_t which_clock",
+    "ecx": "struct timespec __user *tp"
+}, {
+    "eax": "267",
+    "name": "clock_nanosleep",
+    "ebx": "clockid_t which_clock",
+    "ecx": "int flags",
+    "edx": "const struct timespec __user *rqtp",
+    "esi": "struct timespec __user *rmtp"
+}, {
+    "eax": "268",
+    "name": "statfs64",
+    "ebx": "const char __user *path",
+    "ecx": "size_t sz",
+    "edx": "struct statfs64 __user *buf"
+}, {
+    "eax": "269",
+    "name": "fstatfs64",
+    "ebx": "unsigned int fd",
+    "ecx": "size_t sz",
+    "edx": "struct statfs64 __user *buf"
+}, {
+    "eax": "270",
+    "name": "tgkill",
+    "ebx": "int tgid",
+    "ecx": "int pid",
+    "edx": "int sig"
+}, {
+    "eax": "271",
+    "name": "utimes",
+    "ebx": "char __user *filename",
+    "ecx": "struct timeval __user *utimes"
+}, {
+    "eax": "272",
+    "name": "fadvise64_64",
+    "ebx": "int fd",
+    "ecx": "loff_t offset",
+    "edx": "loff_t len",
+    "esi": "int advice"
+}, {
+    "eax": "273",
+    "name": "not implemented"
+}, {
+    "eax": "274",
+    "name": "mbind"
+}, {
+    "eax": "275",
+    "name": "get_mempolicy",
+    "ebx": "int __user *policy",
+    "ecx": "unsigned long __user *nmask",
+    "edx": "unsigned long maxnode",
+    "esi": "unsigned long addr",
+    "edi": "unsigned long flags"
+}, {
+    "eax": "276",
+    "name": "set_mempolicy",
+    "ebx": "int mode",
+    "ecx": "unsigned long __user *nmask",
+    "edx": "unsigned long maxnode"
+}, {
+    "eax": "277",
+    "name": "mq_open",
+    "ebx": "const char __user *name",
+    "ecx": "int oflag",
+    "edx": "mode_t mode",
+    "esi": "struct mq_attr __user *attr"
+}, {
+    "eax": "278",
+    "name": "mq_unlink",
+    "ebx": "const char __user *name"
+}, {
+    "eax": "279",
+    "name": "mq_timedsend",
+    "ebx": "mqd_t mqdes",
+    "ecx": "const char __user *msg_ptr",
+    "edx": "size_t msg_len",
+    "esi": "unsigned int msg_prio",
+    "edi": "const struct timespec __user *abs_timeout"
+}, {
+    "eax": "280",
+    "name": "mq_timedreceive",
+    "ebx": "mqd_t mqdes",
+    "ecx": "char __user *msg_ptr",
+    "edx": "size_t msg_len",
+    "esi": "unsigned int __user *msg_prio",
+    "edi": "const struct timespec __user *abs_timeout"
+}, {
+    "eax": "281",
+    "name": "mq_notify",
+    "ebx": "mqd_t mqdes",
+    "ecx": "const struct sigevent __user *notification"
+}, {
+    "eax": "282",
+    "name": "mq_getsetattr",
+    "ebx": "mqd_t mqdes",
+    "ecx": "const struct mq_attr __user *mqstat",
+    "edx": "struct mq_attr __user *omqstat"
+}, {
+    "eax": "283",
+    "name": "kexec_load",
+    "ebx": "unsigned long entry",
+    "ecx": "unsigned long nr_segments",
+    "edx": "struct kexec_segment __user *segments",
+    "esi": "unsigned long flags"
+}, {
+    "eax": "284",
+    "name": "waitid",
+    "ebx": "int which",
+    "ecx": "pid_t pid",
+    "edx": "struct siginfo __user *infop",
+    "esi": "int options",
+    "edi": "struct rusage __user *ru"
+}, {
+    "eax": "285",
+    "name": "not implemented"
+}, {
+    "eax": "286",
+    "name": "add_key",
+    "ebx": "const char __user *_type",
+    "ecx": "const char __user *_description",
+    "edx": "const void __user *_payload",
+    "esi": "size_t plen",
+    "edi": "key_serial_t destringid"
+}, {
+    "eax": "287",
+    "name": "request_key",
+    "ebx": "const char __user *_type",
+    "ecx": "const char __user *_description",
+    "edx": "const char __user *_callout_info",
+    "esi": "key_serial_t destringid"
+}, {
+    "eax": "288",
+    "name": "keyctl",
+    "ebx": "int cmd",
+    "ecx": "unsigned long arg2",
+    "edx": "unsigned long arg3",
+    "esi": "unsigned long arg4",
+    "edi": "unsigned long arg5"
+}, {
+    "eax": "289",
+    "name": "ioprio_set",
+    "ebx": "int which",
+    "ecx": "int who",
+    "edx": "int ioprio"
+}, {
+    "eax": "290",
+    "name": "ioprio_get",
+    "ebx": "int which",
+    "ecx": "int who"
+}, {
+    "eax": "291",
+    "name": "inotify_init"
+}, {
+    "eax": "292",
+    "name": "inotify_add_watch",
+    "ebx": "int fd",
+    "ecx": "const char __user *path",
+    "edx": "u32 mask"
+}, {
+    "eax": "293",
+    "name": "inotify_rm_watch",
+    "ebx": "int fd",
+    "ecx": "__s32 wd"
+}, {
+    "eax": "294",
+    "name": "migrate_pages",
+    "ebx": "pid_t pid",
+    "ecx": "unsigned long maxnode",
+    "edx": "const unsigned long __user *from",
+    "esi": "const unsigned long __user *to"
+}, {
+    "eax": "295",
+    "name": "openat",
+    "ebx": "int dfd",
+    "ecx": "const char __user *filename",
+    "edx": "int flags",
+    "esi": "int mode"
+}, {
+    "eax": "296",
+    "name": "mkdirat",
+    "ebx": "int dfd",
+    "ecx": "const char __user * pathname",
+    "edx": "int mode"
+}, {
+    "eax": "297",
+    "name": "mknodat",
+    "ebx": "int dfd",
+    "ecx": "const char __user * filename",
+    "edx": "int mode",
+    "esi": "unsigned dev"
+}, {
+    "eax": "298",
+    "name": "fchownat",
+    "ebx": "int dfd",
+    "ecx": "const char __user *filename",
+    "edx": "uid_t user",
+    "esi": "gid_t group",
+    "edi": "int flag"
+}, {
+    "eax": "299",
+    "name": "futimesat",
+    "ebx": "int dfd",
+    "ecx": "char __user *filename",
+    "edx": "struct timeval __user *utimes"
+}, {
+    "eax": "300",
+    "name": "fstatat64",
+    "ebx": "int dfd",
+    "ecx": "char __user *filename",
+    "edx": "struct stat64 __user *statbuf",
+    "esi": "int flag"
+}, {
+    "eax": "301",
+    "name": "unlinkat",
+    "ebx": "int dfd",
+    "ecx": "const char __user * pathname",
+    "edx": "int flag"
+}, {
+    "eax": "302",
+    "name": "renameat",
+    "ebx": "int olddfd",
+    "ecx": "const char __user * oldname",
+    "edx": "int newdfd",
+    "esi": "const char __user * newname"
+}, {
+    "eax": "303",
+    "name": "linkat",
+    "ebx": "int olddfd",
+    "ecx": "const char __user *oldname",
+    "edx": "int newdfd",
+    "esi": "const char __user *newname",
+    "edi": "int flags"
+}, {
+    "eax": "304",
+    "name": "symlinkat",
+    "ebx": "const char __user * oldname",
+    "ecx": "int newdfd",
+    "edx": "const char __user * newname"
+}, {
+    "eax": "305",
+    "name": "readlinkat",
+    "ebx": "int dfd",
+    "ecx": "const char __user *path",
+    "edx": "char __user *buf",
+    "esi": "int bufsiz"
+}, {
+    "eax": "306",
+    "name": "fchmodat",
+    "ebx": "int dfd",
+    "ecx": "const char __user * filename",
+    "edx": "mode_t mode"
+}, {
+    "eax": "307",
+    "name": "faccessat",
+    "ebx": "int dfd",
+    "ecx": "const char __user *filename",
+    "edx": "int mode"
+}, {
+    "eax": "308",
+    "name": "pselect6"
+}, {
+    "eax": "309",
+    "name": "ppoll",
+    "ebx": "struct pollfd __user *ufds",
+    "ecx": "unsigned int nfds",
+    "edx": "struct timespec __user *tsp",
+    "esi": "const sigset_t __user *sigmask",
+    "edi": "size_t sigsetsize"
+}, {
+    "eax": "310",
+    "name": "unshare",
+    "ebx": "unsigned long unshare_flags"
+}, {
+    "eax": "311",
+    "name": "set_robust_list",
+    "ebx": "struct robust_list_head __user *head",
+    "ecx": "size_t len"
+}, {
+    "eax": "312",
+    "name": "get_robust_list",
+    "ebx": "int pid",
+    "ecx": "struct robust_list_head __user * __user *head_ptr",
+    "edx": "size_t __user *len_ptr"
+}, {
+    "eax": "313",
+    "name": "splice"
+}, {
+    "eax": "314",
+    "name": "sync_file_range",
+    "ebx": "int fd",
+    "ecx": "loff_t offset",
+    "edx": "loff_t nbytes",
+    "esi": "unsigned int flags"
+}, {
+    "eax": "315",
+    "name": "tee",
+    "ebx": "int fdin",
+    "ecx": "int fdout",
+    "edx": "size_t len",
+    "esi": "unsigned int flags"
+}, {
+    "eax": "316",
+    "name": "vmsplice",
+    "ebx": "int fd",
+    "ecx": "const struct iovec __user *iov",
+    "edx": "unsigned long nr_segs",
+    "esi": "unsigned int flags"
+}, {
+    "eax": "317",
+    "name": "move_pages"
+}, {
+    "eax": "318",
+    "name": "getcpu",
+    "ebx": "unsigned __user *cpu",
+    "ecx": "unsigned __user *node",
+    "edx": "struct getcpu_cache __user *cache"
+}, {
+    "eax": "319",
+    "name": "epoll_pwait"
+}, {
+    "eax": "320",
+    "name": "utimensat",
+    "ebx": "int dfd",
+    "ecx": "char __user *filename",
+    "edx": "struct timespec __user *utimes",
+    "esi": "int flags"
+}, {
+    "eax": "321",
+    "name": "signalfd",
+    "ebx": "int ufd",
+    "ecx": "sigset_t __user *user_mask",
+    "edx": "size_t sizemask"
+}, {
+    "eax": "322",
+    "name": "timerfd_create",
+    "ebx": "int clockid",
+    "ecx": "int flags"
+}, {
+    "eax": "323",
+    "name": "eventfd",
+    "ebx": "unsigned int count"
+}, {
+    "eax": "324",
+    "name": "fallocate",
+    "ebx": "int fd",
+    "ecx": "int mode",
+    "edx": "loff_t offset",
+    "esi": "loff_t len"
+}, {
+    "eax": "325",
+    "name": "timerfd_settime",
+    "ebx": "int ufd",
+    "ecx": "int flags",
+    "edx": "const struct itimerspec __user *utmr",
+    "esi": "struct itimerspec __user *otmr"
+}, {
+    "eax": "326",
+    "name": "timerfd_gettime",
+    "ebx": "int ufd",
+    "ecx": "struct itimerspec __user *otmr"
+}, {
+    "eax": "327",
+    "name": "signalfd4",
+    "ebx": "int ufd",
+    "ecx": "sigset_t __user *user_mask",
+    "edx": "size_t sizemask",
+    "esi": "int flags"
+}, {
+    "eax": "328",
+    "name": "eventfd2",
+    "ebx": "unsigned int count",
+    "ecx": "int flags"
+}, {
+    "eax": "329",
+    "name": "epoll_create1",
+    "ebx": "int flags"
+}, {
+    "eax": "330",
+    "name": "dup3",
+    "ebx": "unsigned int oldfd",
+    "ecx": "unsigned int newfd",
+    "edx": "int flags"
+}, {
+    "eax": "331",
+    "name": "pipe2",
+    "ebx": "int __user *fildes",
+    "ecx": "int flags"
+}, {
+    "eax": "332",
+    "name": "inotify_init1",
+    "ebx": "int flags"
+}, {
+    "eax": "333",
+    "name": "preadv",
+    "ebx": "unsigned long fd",
+    "ecx": "const struct iovec __user *vec",
+    "edx": "unsigned long vlen",
+    "esi": "unsigned long pos_l",
+    "edi": "unsigned long pos_h"
+}, {
+    "eax": "334",
+    "name": "pwritev",
+    "ebx": "unsigned long fd",
+    "ecx": "const struct iovec __user *vec",
+    "edx": "unsigned long vlen",
+    "esi": "unsigned long pos_l",
+    "edi": "unsigned long pos_h"
+}, {
+    "eax": "335",
+    "name": "rt_tgsigqueueinfo",
+    "ebx": "pid_t tgid",
+    "ecx": "pid_t pid",
+    "edx": "int sig",
+    "esi": "siginfo_t __user *uinfo"
+}, {
+    "eax": "336",
+    "name": "perf_event_open",
+    "ebx": "struct perf_event_attr __user *attr_uptr",
+    "ecx": "pid_t pid",
+    "edx": "int cpu",
+    "esi": "int group_fd",
+    "edi": "unsigned long flags"
+}, {
+    "eax": "337",
+    "name": "recvmmsg",
+    "ebx": "int fd",
+    "ecx": "struct mmsghdr __user *msg",
+    "edx": "unsigned int vlen",
+    "esi": "unsigned flags",
+    "edi": "struct timespec __user *timeout"
+}]
