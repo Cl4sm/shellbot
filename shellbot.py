@@ -1,13 +1,15 @@
 #!/usr/bin/env python3.7
-from flask import Flask, request
-from ctf_time import CTFTime
-from datetime import datetime
-import slack
-import requests
-import random
 import json
 import os
+import random
 import pprint
+from datetime import datetime
+
+import slack
+import requests
+from flask import Flask, request
+
+from ctf_time import CTFTime
 
 app = Flask(__name__)
 SLACK_BOT_TOKEN = os.environ["SLACK_BOT_TOKEN"]
